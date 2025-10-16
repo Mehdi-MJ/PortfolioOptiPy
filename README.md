@@ -11,3 +11,13 @@ I will keep implenting new features and adjusting assumptions and models with ti
 Do not hesitate to contact me concerning any bugs or improvement suggestions.
 
 Please note that you need to install the required dependencies to be able to run the app (see dependencies.txt)
+
+How to use the app :
+
+Download PortfolioOpti.Py
+
+On your terminal :
+Navigate to the location of the script.
+Make sure you have all the dependencies (You can use : pip install -r requirements.txt)
+
+Run : streamlit run PortfolioOpti.py
