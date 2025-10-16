@@ -18,6 +18,6 @@ Download PortfolioOpti.Py
 
 On your terminal :
 Navigate to the location of the script.
-Make sure you have all the dependencies (You can use : pip install -r requirements.txt)
+Make sure you have all the dependencies (You can use : pip install -r dependencies.txt)
 
 Run : streamlit run PortfolioOpti.py
