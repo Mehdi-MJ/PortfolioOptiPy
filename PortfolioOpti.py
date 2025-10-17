@@ -74,7 +74,7 @@ if st.button("Fetch Data"):
     df_ratios.set_index("Ticker", inplace=True)
     st.dataframe(df_ratios.style.format("{:.2f}"))
 
-    st.caption("ℹ️ P/E = Price/Earnings, P/S = Price/Sales. Data from Yahoo Finance (yfinance).")
+    st.caption(" P/E = Price/Earnings, P/S = Price/Sales. Data from Yahoo Finance (yfinance).")
 
     # --- PORTFOLIO RISK ANALYSIS ---
     st.subheader("Portfolio Risk Analysis")
@@ -105,12 +105,12 @@ if st.button("Fetch Data"):
     st.write(f"**Diversification Benefit (Risk Reduction):** {diversification_effect:.2%}")
 
     if diversification_effect > 0:
-        st.success("Your portfolio benefits from diversification — total risk is lower than sum of individual risks.")
+        st.success("Your portfolio benefits from diversification. Total risk is lower than sum of individual risks.")
     else:
-        st.warning("Little or no diversification benefit — assets may be highly correlated.")
+        st.warning("Little or no diversification benefit. Assets may be highly correlated.")
 
     # --- CORRELATION RANKING ---
-    st.subheader("🔗 Asset Correlation Ranking")
+    st.subheader("Asset Correlation Ranking")
     corr_mean = corr.mean().sort_values(ascending=False)
     st.write("**Average Correlation per Asset (highest to lowest):**")
     st.dataframe(corr_mean.round(3))
@@ -156,3 +156,4 @@ if st.button("Fetch Data"):
     st.write(f"**Expected Annual Return:** {opt_return:.2%}")
     st.write(f"**Expected Volatility:** {opt_vol:.2%}")
     st.write(f"**Sharpe Ratio:** {opt_sharpe:.2f}")
+
